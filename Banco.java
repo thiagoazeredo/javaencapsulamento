@@ -2,18 +2,18 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package conta;
+package banco;
 
 /**
  *
  * @author Thiago
  */
-public class Conta {
-       // Declaração dos atributos
+public class  Banco {
+       // Declaracao dos atributos
      private double Caixa = 0;
      private String Nome;
 
-      // Declaração dos métodos
+      // Declaracao dos metodos
       public void dep(double Quantia)  
       {
           this.Caixa = this.Caixa + Quantia + (Quantia*0.30);
@@ -33,17 +33,17 @@ public class Conta {
     public static void main(String[] args)
     {
         // TODO code application logic her
-        //  instanciando duas contas,  c1 e c2
+        //  Selecao das contas
         Conta client1 = new Conta();
         Conta client2 = new Conta();
         Conta client3 = new Conta();
         Conta client4 = new Conta();
-        // Definindo o nome de ambas pelo método setNome
+        // Nome dos clientes cadastrados
         client1.setNome( "Cliente 1" );
         client2.setNome( "Cliente 2" );
         client3.setNome( "Cliente 3" );
         client4.setNome( "Cliente 4" );
-        // Depositando
+        // Somar valores nas contas
         client1.dep (20);
         client2.dep (30);
         client3.dep (40);
